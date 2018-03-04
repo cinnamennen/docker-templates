@@ -46,19 +46,19 @@
     </Networking>
     <Data>
         <!--<Volume>-->
-            <!--<HostDir>/mnt/user/world/</HostDir>-->
-            <!--<ContainerDir>/server/world</ContainerDir>-->
-            <!--<Mode>rw</Mode>-->
+        <!--<HostDir>/mnt/user/world/</HostDir>-->
+        <!--<ContainerDir>/server/world</ContainerDir>-->
+        <!--<Mode>rw</Mode>-->
         <!--</Volume>-->
         <!--<Volume>-->
-            <!--<HostDir>/mnt/user/logs/</HostDir>-->
-            <!--<ContainerDir>/server/logs</ContainerDir>-->
-            <!--<Mode>rw</Mode>-->
+        <!--<HostDir>/mnt/user/logs/</HostDir>-->
+        <!--<ContainerDir>/server/logs</ContainerDir>-->
+        <!--<Mode>rw</Mode>-->
         <!--</Volume>-->
         <!--<Volume>-->
-            <!--<HostDir>/mnt/user/backup/</HostDir>-->
-            <!--<ContainerDir>/server/backup</ContainerDir>-->
-            <!--<Mode>rw</Mode>-->
+        <!--<HostDir>/mnt/user/backup/</HostDir>-->
+        <!--<ContainerDir>/server/backup</ContainerDir>-->
+        <!--<Mode>rw</Mode>-->
         <!--</Volume>-->
     </Data>
     <Environment>
@@ -74,18 +74,23 @@
         </Variable>
     </Environment>
     <!--<Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable"-->
-            <!--Display="always" Required="false" Mask="false">99-->
+    <!--Display="always" Required="false" Mask="false">99-->
     <!--</Config>-->
     <!--<Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable"-->
-            <!--Display="always" Required="false" Mask="false">100-->
+    <!--Display="always" Required="false" Mask="false">100-->
     <!--</Config>-->
     <!--<Config Name="Key 3" Target="VERSION" Default="latest" Mode="" Description="Container Variable: VERSION"-->
-            <!--Type="Variable" Display="always" Required="false" Mask="false">latest-->
+    <!--Type="Variable" Display="always" Required="false" Mask="false">latest-->
     <!--</Config>-->
-    <Config Name="World" Target="/server/world" Default="" Mode="rw" Description="Container Path: /server/world" Type="Path"
+    <Config Name="Server Port" Target="25565" Default="25565" Mode="tcp" Description="Container Port: 25565" Type="Port"
             Display="always" Required="true" Mask="false">
     </Config>
-    <Config Name="Backup" Target="/server/backup" Default="" Mode="rw" Description="Container Path: /server/backup" Type="Path"
+    <Config Name="World" Target="/server/world" Default="" Mode="rw" Description="Container Path: /server/world"
+            Type="Path"
+            Display="always" Required="true" Mask="false">
+    </Config>
+    <Config Name="Backup" Target="/server/backup" Default="" Mode="rw" Description="Container Path: /server/backup"
+            Type="Path"
             Display="always" Required="true" Mask="false">
     </Config>
     <Config Name="Logs" Target="/server/logs" Default="" Mode="rw" Description="Container Path: /server/logs"
