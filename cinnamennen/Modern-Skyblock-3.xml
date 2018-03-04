@@ -35,17 +35,17 @@
     </Environment>
     <Data>
         <Volume>
-            <HostDir></HostDir>
+            <HostDir>World</HostDir>
             <ContainerDir>/server/world</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir></HostDir>
+            <HostDir>Backup</HostDir>
             <ContainerDir>/server/backup</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir></HostDir>
+            <HostDir>Logs</HostDir>
             <ContainerDir>/server/logs</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
