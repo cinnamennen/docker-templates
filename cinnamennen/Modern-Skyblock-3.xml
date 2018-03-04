@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <Date>2018-03-04</Date>
+    <Name>Modern Skyblock 3</Name>
+    <Beta>False</Beta>
+    <Project>https://minecraft.curseforge.com/projects/modern-skyblock-3-departed</Project>
+    <Changes>
+        - First Try
+    </Changes>
+    <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+    <Overview>This is where overview text goes.
+    </Overview>
+    <Support>https://github.com/cinnamennen/Modern-Skyblock-3/</Support>
+    <Description>This is where a description would go
+    </Description>
+    <Registry>https://registry.hub.docker.com/u/cinnamennen/modern-skyblock-3/</Registry>
+    <Repository>cinnamennen/modern-skyblock-3</Repository>
+    <BindTime>true</BindTime>
+    <Privileged>false</Privileged>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>25565</HostPort>
+                <ContainerPort>25565</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+    <Environment>
+        <Variable>
+            <Name></Name>
+            <Value></Value>
+        </Variable>
+    </Environment>
+    <Data>
+        <Volume>
+            <HostDir></HostDir>
+            <ContainerDir>/server/world</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir></HostDir>
+            <ContainerDir>/server/backup</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir></HostDir>
+            <ContainerDir>/server/logs</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <WebUI>http://[IP]:[PORT:25565]/</WebUI>
+    <Banner></Banner>
+    <Icon>https://media.forgecdn.net/avatars/141/791/636544733395786830.png</Icon>
+</Container>
