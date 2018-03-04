@@ -83,8 +83,7 @@
     <!--Type="Variable" Display="always" Required="false" Mask="false">latest-->
     <!--</Config>-->
     <Config Name="Server Port" Target="25565" Default="25565" Mode="tcp" Description="Container Port: 25565" Type="Port"
-            Display="always" Required="true" Mask="false">25565
-    </Config>
+            Display="always" Required="true" Mask="false">25565</Config>
     <Config Name="World" Target="/server/world" Default="" Mode="rw" Description="Container Path: /server/world"
             Type="Path"
             Display="always" Required="true" Mask="false">
