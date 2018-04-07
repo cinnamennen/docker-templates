@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
     <Name>Modern skyblock 3</Name>
-    <Repository>cinnamennen/modern-skyblock-3</Repository>
-    <Registry>https://hub.docker.com/r/cinnamennen/modern-skyblock-3/</Registry>
+    <Repository>itzg/minecraft-server</Repository>
+    <Registry>https://hub.docker.com/r/itzg/minecraft-server/</Registry>
     <Network>host</Network>
     <MyIP/>
     <Privileged>false</Privileged>
@@ -72,6 +72,27 @@
             <Name>PGID</Name>
             <Mode/>
         </Variable>
+        <Variable>
+            <Value>TRUE</Value>
+            <Name>EULA</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value>1.12.2</Value>
+            <Name>VERSION</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value>FORGE</Value>
+            <Name>TYPE</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value>14.23.2.2611</Value>
+            <Name>FORGEVERSION</Name>
+            <Mode/>
+        </Variable>
+
     </Environment>
     <!--<Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable"-->
     <!--Display="always" Required="false" Mask="false">99-->
@@ -83,16 +104,10 @@
     <!--Type="Variable" Display="always" Required="false" Mask="false">latest-->
     <!--</Config>-->
     <Config Name="Server Port" Target="25565" Default="25565" Mode="tcp" Description="Container Port: 25565" Type="Port"
-            Display="always" Required="true" Mask="false">25565</Config>
-    <Config Name="World" Target="/server/world" Default="" Mode="rw" Description="Container Path: /server/world"
+            Display="always" Required="true" Mask="false">25565
+    </Config>
+    <Config Name="Modpack" Target="/data" Default="" Mode="rw" Description="Container Path: /data"
             Type="Path"
             Display="always" Required="true" Mask="false">
-    </Config>
-    <Config Name="Backup" Target="/server/backup" Default="" Mode="rw" Description="Container Path: /server/backup"
-            Type="Path"
-            Display="always" Required="true" Mask="false">
-    </Config>
-    <Config Name="Logs" Target="/server/logs" Default="" Mode="rw" Description="Container Path: /server/logs"
-            Type="Path" Display="always" Required="true" Mask="false">
     </Config>
 </Container>
